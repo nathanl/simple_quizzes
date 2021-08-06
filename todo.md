@@ -1,0 +1,2 @@
+- Make it possible to click and run this.
+  - See https://apple.stackexchange.com/questions/143219/how-can-i-make-an-automator-service-run-a-shell-script-and-display-the-output - Rockwell says "If you make the Automator project as an Application, it will save as a regular icon you can just click on"
