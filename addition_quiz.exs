@@ -48,7 +48,16 @@ defmodule SpeedQuiz do
     It took you #{elapsed} seconds to answer #{@question_count} questions - an average of #{average} #{unit} per question.
     """)
 
+    answer = IO.gets("Play again? Press 'y' for yes and 'n' for no.\n") |> String.trim()
+
     Task.await(clip_task)
+
+    if answer == "y" do
+      IO.puts "\n\nPlaying again!\n\n"
+      run()
+    else
+      IO.puts "Bye!"
+    end
   end
 
   defp parse_to_num(str) do
