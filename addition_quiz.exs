@@ -3,7 +3,7 @@ defmodule SpeedQuiz do
   @range 1..10
 
   # Ask this many questions
-  @question_count 1
+  @question_count 5
 
   def start do
     IO.gets("Press any key to start playing...\n")
